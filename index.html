@@ -1,12 +1,153 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en">
 
 <head>
-    <title>WEEK-1</title>
+
+    <meta charset="utf-8">
+
+    <title>Client | Page Title</title>
+
+    <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
+    <meta name="description" lang="en" content="">
+
+    <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
+    <meta name="keywords" lang="en" content="">
+
+    <!-- View-port Basics: http://mzl.la/VYREaP -->
+    <!-- This meta tag is used for mobile device to display the page without any zooming,
+       so how much the device is able to fit on the screen is what's shown initially.
+       Remove comments from this tag, when you want to apply media queries to the website. -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+
+    <!-- To adhear no-cache for Chrome -->
+    <!-- <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
+       <meta http-equiv="Pragma" content="no-store, no-cache" />
+       <meta http-equiv="Expires" content="0" />
+     -->
+    <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+    <link rel="stylesheet" media="screen" href="css/style.css">
+
+    <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->
+    <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
 </head>
 
 <body>
-
+    <header>
+        <div class="logo">
+            <img src="/assets/images/logo.jpg" alt="logo" />
+        </div>
+        <nav class="menu">
+            <a href="#">work</a>
+            <a href="#">team</a>
+            <a href="#">contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <h1>let us make your lives easier</h1>
+            <h6> we specialize in crafting awesome ideas for web,mobile and beyond</h6>
+        </div>
+        <div class="features">
+            <h2 class="feature-heading"><u>featured work</u></h2>
+            <p>here you can find some of our latest works, to see the details of these works just click the thumbnails below.</p>
+            <section class="featured-work-logo">
+                <img src="/assets/images/pillter.png" alt="featured-logo-1" />
+                <img src="/assets/images/pillter.png" alt="featured-logo-2" />
+                <img src="/assets/images/pillter.png" alt="featured-logo-3" />
+                <img src="/assets/images/pillter.png" alt="featured-logo-4" />
+                <img src="/assets/images/pillter.png" alt="featured-logo-5" />
+                <img src="/assets/images/pillter.png" alt="featured-logo-6" />
+                <img src="/assets/images/pillter.png" alt="featured-logo-7" />
+                <img src="/assets/images/pillter.png" alt="featured-logo-8" />
+                <img src="/assets/images/pillter.png" alt="featured-logo-9" />
+            </section>
+        </div>
+        <div class="team">
+            <h2 class="feature-heading"><u>team</u></h2>
+            <p> we are hard working group, who's aim is to listen your problems and to come up with the best solution possible. We fallow the lates trends on the we to create custom talierd niche website</p>
+            <section class="team-members">
+                <div class="member">
+                    <div class="member-image">
+                        <img src="/assets/images/member.png" alt="team member">
+                    </div>
+                    <h4 class="member-name">name surname</h4>
+                    <h6 class="member-designation">lead developer</h6>
+                    <div class="member-social-media-link">
+                        <img src="/assets/images/Twitter.png" alt="social media" />
+                        <img src="/assets/images/Twitter.png" alt="social media" />
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="member-image">
+                        <img src="/assets/images/member.png" alt="team member">
+                    </div>
+                    <h4 class="member-name">name surname</h4>
+                    <h6 class="member-designation">lead designer</h6>
+                    <div class="member-social-media-link">
+                        <img src="/assets/images/Twitter.png" alt="social media" />
+                        <img src="/assets/images/Twitter.png" alt="social media" />
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="member-image">
+                        <img src="/assets/images/member.png" alt="team member">
+                    </div>
+                    <h4 class="member-name">name surname</h4>
+                    <h6 class="member-designation">marketing director</h6>
+                    <div class="member-social-media-link">
+                        <img src="/assets/images/Twitter.png" alt="social media" />
+                        <img src="/assets/images/Twitter.png" alt="social media" />
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="member-image">
+                        <img src="/assets/images/member.png" alt="team member">
+                    </div>
+                    <h4 class="member-name">name surname</h4>
+                    <h6 class="member-designation">business director</h6>
+                    <div class="member-social-media-link">
+                        <img src="/assets/images/Twitter.png" alt="social media" />
+                        <img src="/assets/images/Twitter.png" alt="social media" />
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="contact">
+            <h2 class="feature-heading">contact</h2>
+            <div class="contact-map">
+                <h6>where are we located?</h6>
+                <div class="map-image">
+                    <img scr="/assets/images/map.png" alt="location image" />
+                </div>
+            </div>
+            <div class="send-enquiry">
+                <h6>Want to contact us now? Just drop us a line below.</h6>
+                <textarea placeholder="Leave us a message..."> </textarea>
+                <div class="contact-details">
+                    <input type="text" placeholder="your@mail.com" />
+                    <input type="button" value="SEND" />
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="address">
+            <h6>Address: 60 feet road, bhayander(west)-401101 </h6>
+        </div>
+        <div class="copyright">
+            <span>Copyright@limbo 2013</span>
+        </div>
+    </footer>
+    <!--  <script src="js/vendors/jquery-1.8.3.min.js"></script>
+ <script src="js/script.js"></script> -->
 </body>
 
 </html>
