@@ -280,8 +280,12 @@ header {
 }
 
 header .logo {
-    float: left;
+    display: inline-block;
     /*margin: 41px 494px 42px 150px;*/
+}
+
+header .logo h1 a {
+    display: block;
 }
 
 header nav {
