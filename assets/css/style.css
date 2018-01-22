@@ -269,19 +269,22 @@ sub {
     font-weight: bold;
 }
 
-.container {
+.wrapper {
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 header {
-    padding: 41px 150px 42px;
+    padding: 41px 0 42px 0;
 }
 
 header .logo {
-    float: left;
-    /*margin: 41px 494px 42px 150px;*/
+    display: inline-block;
+}
+
+header .logo h1 a {
+    display: block;
 }
 
 header nav {
@@ -292,25 +295,154 @@ header nav .menu-name {
     padding-right: 103px;
     color: #a7a7a7;
     font: 500 12px 'Gotham';
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 header nav .menu-name:last-child {
     padding-right: 0;
 }
 
-
-/*
-.menu {
-    /float: right;
+main .banner {
+    width: 100%;
+    height: 500px;
+    background: url('../images/banner-image.png') no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.menu-name {
-    font-family: Gotham;
-    color: #a7a7a7;
-    font-size: 12px;
-    
-    font-weight: 500;
-    line-height: 50px;
-    
+main .features {
     text-align: center;
+}
+
+main .features ul.feature-list li {
+    width: 28.81%;
+    margin-bottom: 60px;
+    display: inline-block;
+}
+
+main .features ul.feature-list li:nth-child(3n+1), main .features ul.feature-list li:nth-child(3n-1) {
+    margin-right: 60px;
+}
+
+main .features ul.feature-list li a {
+    display: block;
+}
+
+main .features ul.feature-list li a img {
+    width: 100%;
+    display: inline-block;
+}
+
+/*main .features h2 {
+    padding: 49px 0 18px 0;
+    border-bottom: 4px solid black;
+    display: inline-block;
+    color:  #303030;
+    line-height: 25px;
+    font: 700 30px 'Gotham';
+    text-transform: uppercase;
 }*/
+
+main .feature-description {
+    width: 100%;
+    max-width: 534px;
+    padding: 32px 0 51px 0;
+    margin: 0 auto;
+    color:  #5a5a5a;
+    line-height: 25px;
+    font: 400 16px 'ProximaNova';
+}
+
+main .feature-heading {
+    padding: 49px 0 18px 0;
+    border-bottom: 4px solid black;
+    /*display: inline-block;*/
+    color:  #303030;
+    line-height: 25px;
+    font: 700 30px 'Gotham';
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main .team {
+    padding-bottom: 80px;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+main .team ul.team-members > li {
+    width: 25%;
+    max-width: 210px;
+    box-shadow: 1px 2px 4px 0px rgba(0, 1, 1, 0.2);
+    padding: 19px;
+    margin-right: 20px;
+    display: inline-block;
+    background-color: #fff;
+}
+
+main .team ul.team-members > li:last-child {
+    margin-right: 0;
+}
+
+main .team ul li .member-image {
+    padding-bottom: 16px;
+}
+
+main .team ul li h4 {
+    padding-bottom: 13px;
+    color:  #303030;
+    font: 700 16px 'Gotham';
+    text-transform: uppercase;
+}
+
+main .team ul li h6 {
+    padding-bottom: 19px;
+    color:  #303030;
+    font: italic normal 12px 'Georgia';
+    text-transform: capitalize;    
+}
+
+main .team ul li ul.member-social-media-link li {
+    padding-right: 21px;
+    display: inline-block;
+}
+
+main .team ul li ul.member-social-media-link li:last-child {
+    padding-right: 0;
+} 
+
+main .contact .contact-map {
+    width: 36%;
+    margin-right: 40px;
+    display: inline-block;
+}
+
+main .contact .contact-map img {
+    width: 100%;
+}
+
+main .contact .send-enquiry {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+main .contact .contact-heading {
+    padding: 42px 0 27px 0;
+}
+
+main .contact .send-enquiry textarea {
+    width: 100%;
+    padding: 28px 29px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(0, 0, 0, 15);
+    background-color:  #f2f2f2;
+}
+
+main .contact .send-enquiry input {
+    padding: 24px 29px;
+    margin-right: 20px;
+    border: 1px solid rgba(0, 0, 0, 15);
+    background-color:  #f2f2f2;
+}
