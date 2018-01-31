@@ -31,8 +31,8 @@
 
     <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
     <link rel="stylesheet" media="screen" href="assets/css/style.css">
-    <link href="//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham" rel="stylesheet" type="text/css"/>
-    
+    <link href="//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham" rel="stylesheet" type="text/css" />
+
     <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->
     <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -61,14 +61,19 @@
     </div>
     <main>
         <div class="banner">
-            <h1>let us make your lives easier</h1>
-            <h6> we specialize in crafting awesome ideas for web,mobile and beyond</h6>
+            <div class="banner-content">
+                <h1>let us make your lives easier</h1>
+                <h6>We specialize in crafting awesome ideas for web,mobile and beyond</h6>
+                <a href="#" title="down button"><img src="assets/images/down-button.png" alt="down button"></a>
+            </div>
         </div>
         <div class="container">
             <div class="wrapper">
                 <div class="features">
                     <h2 class="feature-heading">featured work</h2>
-                    <p class="feature-description">Here you can find some of our latest works, to see the details of these works just click the thumbnails below.</p>
+                    <p class="feature-description">Here you can find some of our latest works, to see the details of these works just click the thumbnails
+                        below.
+                    </p>
                     <ul class="feature-list">
                         <li>
                             <a href="#" title="Featured Logo 1">
@@ -211,15 +216,17 @@
                 <div class="contact">
                     <h2 class="feature-heading">contact</h2>
                     <div class="contact-map">
-                        <h6 class="contact-heading">where are we located?</h6>
+                        <h6 class="contact-heading">Where are we located?</h6>
                         <div class="map-image">
                             <img src="assets/images/map.png" alt="location image" />
                         </div>
                     </div>
                     <div class="send-enquiry">
-                        <h6 class="contact-heading">Want to contact us now? Just drop us a line below.</h6>
-                        <textarea rows="18" cols="50" placeholder="Leave us a message..."></textarea>
-                        <div class="contact-details">
+                        <div class="send-enquiry-details">
+                            <h6 class="contact-heading">Want to contact us now? Just drop us a line below.</h6>
+                            <textarea rows="18" placeholder="Leave us a message..."></textarea>
+                        </div>
+                        <div class="send-enquiry-contact-details">
                             <input type="text" placeholder="your@mail.com" />
                             <button type="button">send</button>
                         </div>
@@ -228,18 +235,19 @@
             </div>
         </div>
     </main>
-    <div class="container">
-        <div class="wrapper">
-            <footer>
+    <footer>
+        <div class="container">
+            <div class="wrapper">
                 <div class="address">
-                    <h6>Address: 60 feet road, bhayander(west)-401101 </h6>
+                    <h6><span>Address:</span> 60 feet road, bhayander(west)-401101 </h6>
                 </div>
                 <div class="copyright">
                     <span>Copyright@limbo 2013</span>
                 </div>
-            </footer>
+            </div>
         </div>
-    </div>
+    </footer>
+
     <!--  <script src="js/vendors/jquery-1.8.3.min.js"></script>
  <script src="js/script.js"></script> -->
 </body>
